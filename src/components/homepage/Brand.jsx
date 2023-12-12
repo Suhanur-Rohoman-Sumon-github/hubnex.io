@@ -18,7 +18,7 @@ const Brand = () => {
                     <span>your have an idea?</span>
                     <span>we have a team</span>
                 </div>
-                <Link to='/contact'><button className=' border-none bg-white py-1 lg:py-[10px] md:text-[20px] px-5 rounded-full text-black text-[13px] font-gilroy-semi-bold'>get started </button></Link>
+                <Link to='/contact'><button className=' border-none bg-white py-1 lg:py-[10px] md:text-[20px] px-5 rounded-full text-black text-[13px] font-gilroy-semi-bold'>Get started </button></Link>
             </div>
         </div>
     </div>

@@ -16,7 +16,7 @@ const About = () => {
                 <div className=" lg:hidden">
                     <img src={about} width={700}/>
                 </div>
-                <div className=' md:max-w-[380px] max-h-[181px] text-white text-lg md:text-[22px]  md:mt-10 '>
+                <div className=' md:max-w-[450px] max-h-[181px] text-white text-lg md:text-[22px]  md:mt-10 md:pl-10'>
                     <p className='leading-tight text-[16px] lg:text-[20px] xl:text-[20px] 2xl:text-[22px] font-gilroy-semi-bold' >
                     That’s why, we at hubnex create solutions that matters. We are not the beasts hungry for every bit of market, but we value time, efforts and emotions as well. We create with the intention of sustaining the product in the market for longer than imagined. We are believers. We believe in you and your potential to break the trend. 
                     </p>

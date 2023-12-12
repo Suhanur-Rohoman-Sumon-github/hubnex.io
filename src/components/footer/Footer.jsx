@@ -138,7 +138,7 @@ const Footer = () => {
           <div className='text-4xl lg:text-[70px] 2xl:text-[70px] md:py-0 font-gilroy-extrabold text-white'>
             <h1 className='text-center lg:text-start'>let's talk</h1>
           </div>
-          <div className='w-[90%] mx-auto md:mx-0 md:w-[358px] lg:h-[310px] text-1xl lg:text-[48px] font-gilroy-light'>
+          <div className='w-[90%] mx-auto md:mx-0 md:w-[450px] lg:h-[310px] text-1xl lg:text-[48px] font-gilroy-light'>
             <p className='text-center leading-tight lg:text-start'>have some great idea or brand to develop?</p>
             <p className='text-center leading-tight lg:text-start'>Let's build it together</p>
           </div>
@@ -157,7 +157,7 @@ const Footer = () => {
           <input className='outline-none bg-transparent border-b-[1px] border-b-gray-300 w-full md:w-96' type='text' id='email' name='email' value={credentials.email} onChange={handleChange} />
 
           <label className='text-gray-200' htmlFor='mobile_no'>PHONE NUMBER {errPhone ? <span className='text-red-500 pl-3'>Phone No is mandatory</span> : <span className='text-red-500'>*</span>}{validPhone && <span className='pl-3 text-red-500'> Please provide valid Phone Number </span>}</label>
-          <input className='outline-none bg-transparent border-b-[1px] border-b-gray-300 w-full md:w-96' type='number' id='mobile_no' maxLength={12} name='phoneNo' value={credentials.phoneNo} onChange={handleChange} />
+          <input className='outline-none bg-transparent border-b-[1px] border-b-gray-300 w-full md:w-96' type='text' id='mobile_no' maxLength={12} name='phoneNo' value={credentials.phoneNo} onChange={handleChange} />
 
           <label className='text-gray-200' htmlFor='message'>MESSAGE</label>
           <input className='pt-5 outline-none bg-transparent border-b-[1px] border-b-gray-300 w-full md:w-96' type='text' id='message' name='message' value={credentials.message} onChange={handleChange} />
