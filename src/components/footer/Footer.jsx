@@ -157,7 +157,7 @@ const Footer = () => {
           <input className='outline-none bg-transparent border-b-[1px] border-b-gray-300 w-full md:w-96' type='text' id='email' name='email' value={credentials.email} onChange={handleChange} />
 
           <label className='text-gray-200' htmlFor='mobile_no'>PHONE NUMBER {errPhone ? <span className='text-red-500 pl-3'>Phone No is mandatory</span> : <span className='text-red-500'>*</span>}{validPhone && <span className='pl-3 text-red-500'> Please provide valid Phone Number </span>}</label>
-          <input className='outline-none bg-transparent border-b-[1px] border-b-gray-300 w-full md:w-96' type='text' id='mobile_no' maxLength={12} name='phoneNo' value={credentials.phoneNo} onChange={handleChange} />
+          <input className='outline-none bg-transparent border-b-[1px] border-b-gray-300 w-full md:w-96' type='number' id='mobile_no' maxLength={12} name='phoneNo' value={credentials.phoneNo} onChange={handleChange} />
 
           <label className='text-gray-200' htmlFor='message'>MESSAGE</label>
           <input className='pt-5 outline-none bg-transparent border-b-[1px] border-b-gray-300 w-full md:w-96' type='text' id='message' name='message' value={credentials.message} onChange={handleChange} />
