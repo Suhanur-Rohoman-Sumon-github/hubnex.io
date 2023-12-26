@@ -1,321 +1,442 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
-    font-family: 'GilroyLight';
-    src: url(./assets/Gilroy-Light.otf);
+  font-family: "GilroyLight";
+  src: url(./assets/Gilroy-Light.otf);
 }
 @font-face {
-    font-family: 'GilroyExtraBold';
-    src: url(./assets/Gilroy-ExtraBold.otf);
+  font-family: "GilroyExtraBold";
+  src: url(./assets/Gilroy-ExtraBold.otf);
 }
 @font-face {
-    font-family: 'GilroyBold';
-    src: url(./assets/Gilroy-Bold.ttf);
+  font-family: "GilroyBold";
+  src: url(./assets/Gilroy-Bold.ttf);
 }
 @font-face {
-    font-family: 'GilroySemiBold';
-    src: url(./assets/Gilroy-SemiBold.ttf);
+  font-family: "GilroySemiBold";
+  src: url(./assets/Gilroy-SemiBold.ttf);
 }
 @font-face {
-    font-family: 'GilroyThin';
-    src: url(./assets/Gilroy-Thin.ttf);
+  font-family: "GilroyThin";
+  src: url(./assets/Gilroy-Thin.ttf);
 }
 @font-face {
-    font-family: 'GilroyRegular';
-    src: url(./assets/Gilroy-Regular.ttf);
+  font-family: "GilroyRegular";
+  src: url(./assets/Gilroy-Regular.ttf);
 }
 @font-face {
-    font-family: 'GilroyBlack';
-    src: url(./assets/Gilroy-Black.ttf);
+  font-family: "GilroyBlack";
+  src: url(./assets/Gilroy-Black.ttf);
 }
 @font-face {
-    font-family: 'GilroyUltraLight';
-    src: url(./assets/Gilroy-UltraLight.ttf);
+  font-family: "GilroyUltraLight";
+  src: url(./assets/Gilroy-UltraLight.ttf);
 }
 @font-face {
-    font-family: 'GilroyHeavy';
-    src: url(./assets/Gilroy-Heavy.ttf);
+  font-family: "GilroyHeavy";
+  src: url(./assets/Gilroy-Heavy.ttf);
 }
 @font-face {
-    font-family: 'GilroyMedium';
-    src: url(./assets/Gilroy-Medium.ttf);
+  font-family: "GilroyMedium";
+  src: url(./assets/Gilroy-Medium.ttf);
 }
 
 .btn-primary {
-    @apply w-max border-white font-gilroy-semi-bold text-[16px] md:text-[20px] border-2 md:border-none bg-transparent md:bg-white text-white md:text-black rounded-full py-2 lg:py-[10px] px-5;
+  @apply w-max border-white font-gilroy-semi-bold text-[16px] md:text-[20px] border-2 md:border-none bg-transparent md:bg-white text-white md:text-black rounded-full py-2 lg:py-[10px] px-5;
 }
 .btn-service {
-    @apply h-full rounded-full flex justify-center items-center  font-gilroy-semi-bold text-[12px] md:text-[20px] bg-white text-black py-2 w-max md:py-[10px] px-5;
+  @apply h-full rounded-full flex justify-center items-center  font-gilroy-semi-bold text-[12px] md:text-[20px] bg-white text-black py-2 w-max md:py-[10px] px-5;
 }
 
 .btn-submit {
-    @apply h-[41px] mt-10 w-[121px] py-1 px-5 border-violet-700 border-[2px] border-t-0 border-l-0 relative bg-transparent rounded-full;
+  @apply h-[41px] mt-10 w-[121px] py-1 px-5 border-violet-700 border-[2px] border-t-0 border-l-0 relative bg-transparent rounded-full;
 }
 
 .text-paragraph {
-    @apply text-[16px] md:text-[24px] font-gilroy-semi-bold lg:w-[600px];
+  @apply text-[16px] md:text-[24px] font-gilroy-semi-bold lg:w-[600px];
 }
 
 /* about us start there */
 
 .about-us-cards-text-div {
-    @apply flex flex-col justify-evenly md:justify-center md:gap-5 w-[180px] h-[198px] md:w-[292px] md:h-[320px] lg:w-[300px] xl:w-[260px] 2xl:w-[300px] rounded-lg md:m-6 md:p-5 lg:p-8 bg-white items-center text-center font-gilroy-bold  overflow-hidden;
+  @apply flex flex-col justify-evenly md:justify-center md:gap-5 w-[180px] h-[198px] md:w-[292px] md:h-[320px] lg:w-[300px] xl:w-[260px] 2xl:w-[300px] rounded-lg md:m-6 md:p-5 lg:p-8 bg-white items-center text-center font-gilroy-bold  overflow-hidden;
 }
 .about-us-cards-image-div {
-    @apply w-[43.31px] h-[43.31px] md:w-[70px] md:h-[70px] shadow-xl flex justify-center items-center md:p-5 bg-orange rounded-full;
+  @apply w-[43.31px] h-[43.31px] md:w-[70px] md:h-[70px] shadow-xl flex justify-center items-center md:p-5 bg-orange rounded-full;
 }
 .about-us-cards-h1 {
-    @apply  text-grey text-[14px] md:text-[24px] font-semibold;
+  @apply text-grey text-[14px] md:text-[24px] font-semibold;
 }
 .about-us-cards-p {
-    @apply   text-grey text-[9.9px] md:text-[16px] px-2 md:px-0 ;
+  @apply text-grey text-[9.9px] md:text-[16px] px-2 md:px-0;
 }
 .about-us-who-we-are-p {
-    @apply   text-[14.42px] mt-5 md:text-[20px] font-gilroy-regular leading-6 ;
+  @apply text-[14.42px] mt-5 md:text-[20px] font-gilroy-regular leading-6;
 }
 .about-us-who-we-are-div {
-    @apply   md:w-[356px] lg:h-[163px] text-center max-[360px]:w-60;
+  @apply md:w-[356px] lg:h-[163px] text-center max-[360px]:w-60;
 }
 .about-us-who-we-are-span {
-    @apply   text-[16.22px] md:text-[22px] font-gilroy-semi-bold;
+  @apply text-[16.22px] md:text-[22px] font-gilroy-semi-bold;
 }
 .about-us-who-we-are-hr {
-    @apply   md:h-[80%] w-[80%] md:w-0 border-[1px]  border-gray-500;
+  @apply md:h-[80%] w-[80%] md:w-0 border-[1px]  border-gray-500;
 }
 .aboutUsTopFirstDiv {
-    @apply   bg-ablack w-full min-h-screen 2xl:h-[884px]  flex justify-evenly items-center gap-1 flex-col pb-20;
+  @apply bg-ablack w-full min-h-screen 2xl:h-[884px]  flex justify-evenly items-center gap-1 flex-col pb-20;
 }
 .aboutUsTopSecondDiv {
-    @apply   text-white font-gilroy-bold text-[28px] flex justify-center items-center  md:text-[3rem] lg:text-[70px] text-center px-5 md:px-0 pt-20 lg:w-[747px];
+  @apply text-white font-gilroy-bold text-[28px] flex justify-center items-center  md:text-[3rem] lg:text-[70px] text-center px-5 md:px-0 pt-20 lg:w-[747px];
 }
 .aboutUsTopH1 {
-    @apply   text-twhite h-full w-full xl:text-[55px] lg:leading-[70px] xl:leading-tight;
+  @apply text-twhite h-full w-full xl:text-[55px] lg:leading-[70px] xl:leading-tight;
 }
 .aboutUsTopP {
-    @apply   text-white flex justify-center items-center font-gilroy-regular leading-[34px] text-[18px] md:text-[1.3rem] xl:text-[21px] text-center p-5 xl:max-w-[1200px];
+  @apply text-white flex justify-center items-center font-gilroy-regular leading-[34px] text-[18px] md:text-[1.3rem] xl:text-[21px] text-center p-5 xl:max-w-[1200px];
 }
-.aboutsPageFirstDiv{
-    @apply   bg-abouts bg-center bg-cover bg-no-repeat h-[982px] w-full ;
+.aboutsPageFirstDiv {
+  @apply bg-abouts bg-center bg-cover bg-no-repeat h-[982px] w-full;
 }
-.aboutsPageSecondDiv{
-    @apply    h-full w-full flex items-center justify-center ;
+.aboutsPageSecondDiv {
+  @apply h-full w-full flex items-center justify-center;
 }
-.aboutsPageThirdDiv{
-    @apply     flex items-center h-full w-full lg:-mt-60 ml-12 lg:ml-14 xl:ml-20 ;
+.aboutsPageThirdDiv {
+  @apply flex items-center h-full w-full lg:-mt-60 ml-12 lg:ml-14 xl:ml-20;
 }
-.aboutsPageFourthDiv{
-    @apply     flex flex-col text-black gap-7 -mt-96 lg:-mt-32 xl:-mt-0 lg:gap-1 xl:mb-56 w-[650px] ;
+.aboutsPageFourthDiv {
+  @apply flex flex-col text-black gap-7 -mt-96 lg:-mt-32 xl:-mt-0 lg:gap-1 xl:mb-56 w-[650px];
 }
-.aboutsPageH1{
-    @apply     text-[28px] md:text-[70px] xl:text-[55px] font-gilroy-bold lg:leading-tight mb-5 ;
+.aboutsPageH1 {
+  @apply text-[28px] md:text-[70px] xl:text-[55px] font-gilroy-bold lg:leading-tight mb-5;
 }
-.aboutsPageP{
-    @apply text-[19px] w-[400px] lg:w-[861px] font-gilroy-medium md:text-[24px] xl:text-[22px] ;
+.aboutsPageP {
+  @apply text-[19px] w-[400px] lg:w-[861px] font-gilroy-medium md:text-[24px] xl:text-[22px];
 }
-.aboutUsHeroFirstDiv{
-    @apply  h-full w-full relative ;
+.aboutUsHeroFirstDiv {
+  @apply h-full w-full relative;
 }
-.aboutUsHeroImage{
-    @apply  absolute bottom-0 right-0 w-full object-cover h-[60%] lg:h-[1147px] lg:w-[1720px] ;
+.aboutUsHeroImage {
+  @apply absolute bottom-0 right-0 w-full object-cover h-[60%] lg:h-[1147px] lg:w-[1720px];
 }
-.aboutUsHeroSecondDiv{
-    @apply  w-full md:w-[70%] h-full md:m-auto flex items-center ;
+.aboutUsHeroSecondDiv {
+  @apply w-full md:w-[70%] h-full md:m-auto flex items-center;
 }
-.aboutUsHeroThirdDiv{
-    @apply flex flex-col h-full justify-center lg:justify-start lg:mt-32 xl:mt-96 text-white gap-8 md:gap-8 absolute -top-44 md:-top-2  xl:-top-48 left-6 lg:left-12 xl:left-24 ;
+.aboutUsHeroThirdDiv {
+  @apply flex flex-col h-full justify-center lg:justify-start lg:mt-32 xl:mt-96 text-white gap-8 md:gap-8 absolute -top-44 md:-top-2  xl:-top-48 left-6 lg:left-12 xl:left-24;
 }
-.aboutUsHeroH1{
-    @apply text-[28px] font-gilroy-semi-bold md:text-[70px] xl:text-[60px] 2xl:text-[60px] ;
+.aboutUsHeroH1 {
+  @apply text-[28px] font-gilroy-semi-bold md:text-[70px] xl:text-[60px] 2xl:text-[60px];
 }
-.aboutUsHeroP{
-    @apply w-full text-[16px] md:w-[700px]  xl:text-[26px] md:text-[28px] leading-tight  ;
+.aboutUsHeroP {
+  @apply w-full text-[16px] md:w-[700px]  xl:text-[26px] md:text-[28px] leading-tight;
 }
 
 /* about us end there */
 
 /* ourself start there */
-.ourSelfFirstDiv{
-    @apply h-auto md:py-0 py-24 lg:h-[930px] w-full bg-earth bg-contain bg-no-repeat bg-black bg-bottom ;
+.ourSelfFirstDiv {
+  @apply h-auto md:py-0 py-24 lg:h-[930px] w-full bg-earth bg-contain bg-no-repeat bg-black bg-bottom;
 }
-.ourSelfSecondDiv{
-    @apply h-full w-full flex justify-center ;
+.ourSelfSecondDiv {
+  @apply h-full w-full flex justify-center;
 }
-.ourSelfThirdDiv{
-    @apply  w-[80%] flex justify-between;
-}
-
-.ourSelfFourthDiv{
-    @apply  w-full flex flex-col lg:gap-20  text-white xl:gap-24;
-}
-.ourSelfFifthDiv{
-    @apply   flex flex-col lg:gap-10  text-center md:mt-40 mb-12 md:mb-0 xl:gap-12;
-}
-.ourSelfH1{
-    @apply   text-[32px] md:text-[65px] xl:text-[60px] font-gilroy-semi-bold mb-4 md:mb-0;
-}
-.ourSelfP{
-    @apply   text-center font-gilroy-medium text-[15px] md:text-[22px];
-}
-.chooseFirstDiv{
-    @apply h-auto lg:py-0 pt-16 xl:h-screen overflow-hidden w-full bg-black bg-cover ;
-}
-.chooseSecondDiv{
-    @apply h-full w-full flex justify-center items-center  ;
-}
-.chooseThirdDiv{
-    @apply  w-[80%] flex justify-center;
+.ourSelfThirdDiv {
+  @apply w-[80%] flex justify-between;
 }
 
-.chooseFourthDiv{
-    @apply  w-full flex flex-col justify-center gap-11 text-white;
+.ourSelfFourthDiv {
+  @apply w-full flex flex-col lg:gap-20  text-white xl:gap-24;
 }
-.chooseFifthDiv{
-    @apply w-full flex flex-col gap-4 text-center lg:mt-20 xl:mt-0;
+.ourSelfFifthDiv {
+  @apply flex flex-col lg:gap-10  text-center md:mt-40 mb-12 md:mb-0 xl:gap-12;
 }
-.chooseH1{
-    @apply  text-[26px] md:text-[50px] font-gilroy-bold tracking-wider;
+.ourSelfH1 {
+  @apply text-[32px] md:text-[65px] xl:text-[60px] font-gilroy-semi-bold mb-4 md:mb-0;
 }
-.chooseP{
-    @apply text-center font-gilroy-regular text-[15px] md:text-[20px];
+.ourSelfP {
+  @apply text-center font-gilroy-medium text-[15px] md:text-[22px];
+}
+.chooseFirstDiv {
+  @apply h-auto lg:py-0 pt-16 xl:h-screen overflow-hidden w-full bg-black bg-cover;
+}
+.chooseSecondDiv {
+  @apply h-full w-full flex justify-center items-center;
+}
+.chooseThirdDiv {
+  @apply w-[80%] flex justify-center;
 }
 
+.chooseFourthDiv {
+  @apply w-full flex flex-col justify-center gap-11 text-white;
+}
+.chooseFifthDiv {
+  @apply w-full flex flex-col gap-4 text-center lg:mt-20 xl:mt-0;
+}
+.chooseH1 {
+  @apply text-[26px] md:text-[50px] font-gilroy-bold tracking-wider;
+}
+.chooseP {
+  @apply text-center font-gilroy-regular text-[15px] md:text-[20px];
+}
 
 /* ourself end there */
 
-
 .flex-cols {
-    @apply   flex flex-col justify-center items-center ;
+  @apply flex flex-col justify-center items-center;
 }
- 
+
 /* serves style start there */
 
-.servesHeroFirstDiv{
-    @apply  w-full h-full xl:-ml-12 ml-4 md:ml-0 pt-36    md:flex items-center justify-center;
+.servesHeroFirstDiv {
+  @apply w-full h-full xl:-ml-12 ml-4 md:ml-0 pt-36    md:flex items-center justify-center;
 }
-.servesHeroAimlFirstDiv{
-    @apply  w-full h-full xl:-ml-12 ml-1 md:ml-0 pt-[80px]   md:flex items-center justify-center;
+.servesHeroAimlFirstDiv {
+  @apply w-full h-full xl:-ml-12 ml-1 md:ml-0 pt-[80px]   md:flex items-center justify-center;
 }
-.servesHeroSecondDiv{
-    @apply  text-white w-[85%] md:flex justify-start h-full  items-center;
+.servesHeroSecondDiv {
+  @apply text-white w-[85%] md:flex justify-start h-full  items-center;
 }
-.servesHeroThirdDiv{
-    @apply md:w-[90%] ml-4 flex flex-col gap-4 xl:gap-14 lg:mb-[180px] xl:mb-40;
-}
-
-.servesH1{
-    @apply text-[24px] md:text-[60px] lg:text-[70px] xl:text-[60px] 2xl:text-[60px] font-gilroy-bold  leading-tight lg:w-[700px];
-}
-.servesP{
-    @apply text-[16px] mb-[15px] md:mb-0 md:text-[24px] font-gilroy-semi-bold;
-    
+.servesHeroThirdDiv {
+  @apply md:w-[90%] ml-4 flex flex-col gap-4 xl:gap-14 lg:mb-[180px] xl:mb-40;
 }
 
-.servesAiMlThirdDiv{
-    @apply md:w-[90%] ml-4 flex flex-col gap-4 xl:gap-14 lg:mb-[180px] xl:mb-40;
+.servesH1 {
+  @apply text-[24px] md:text-[60px] lg:text-[70px] xl:text-[60px] 2xl:text-[60px] font-gilroy-bold  leading-tight lg:w-[700px];
+}
+.servesP {
+  @apply text-[16px] mb-[15px] md:mb-0 md:text-[24px] font-gilroy-semi-bold;
+}
+
+.servesAiMlThirdDiv {
+  @apply md:w-[90%] ml-4 flex flex-col gap-4 xl:gap-14 lg:mb-[180px] xl:mb-40;
 }
 
 /* serves style end there */
 
 /* Works style start there  */
-.worksDiv{
-    @apply  text-white bg-white/5 backdrop-blur-lg rounded-md border p-5 md:p-8 h-[360px] w-[250px] md:w-[640px] md:h-[302px] xl:w-[550px] 2xl:w-[640px] m-4;
+.worksDiv {
+  @apply text-white bg-white/5 backdrop-blur-lg rounded-md border p-5 md:p-8 h-[360px] w-[250px] md:w-[640px] md:h-[302px] xl:w-[550px] 2xl:w-[640px] m-4;
 }
-.worksTopDiv{
-    @apply  bg-black 2xl:h-[902px] py-3 md:py-20 min-h-screen  flex justify-center items-center flex-col gap-0;
+.worksTopDiv {
+  @apply bg-black 2xl:h-[902px] py-3 md:py-20 min-h-screen  flex justify-center items-center flex-col gap-0;
 }
-.worksTopH1{
-    @apply  text-white text-[28px] md:text-[60px]  mt-10;
+.worksTopH1 {
+  @apply text-white text-[28px] md:text-[60px]  mt-10;
 }
-.worksTopP{
-    @apply  text-white text-[20px] text-center md:text-[24px]  p-6;
+.worksTopP {
+  @apply text-white text-[20px] text-center md:text-[24px]  p-6;
 }
-.worksH1{
-    @apply   text-[28px] md:text-[32px] mb-5 lg:mb-10;
+.worksH1 {
+  @apply text-[28px] md:text-[32px] mb-5 lg:mb-10;
 }
-.worksP{
-    @apply   text-[14px] md:text-[16px];
+.worksP {
+  @apply text-[14px] md:text-[16px];
 }
 
 /* Works style end there  */
 
 /* inovetion style start there */
-.innovetionsDiv{
-    @apply  text-white flex 2xl:text-[28px] font-gilroy-medium gap-[14px] ;
+.innovetionsDiv {
+  @apply text-white flex 2xl:text-[28px] font-gilroy-medium gap-[14px];
 }
-.innovetionsTopDiv{
-    @apply  py-10 md:py-0 min-h-screen xl:w-full xl:h-[865px] gap-5 bg-bgblack flex items-center flex-col ;
+.innovetionsTopDiv {
+  @apply py-10 md:py-0 min-h-screen xl:w-full xl:h-[865px] gap-5 bg-bgblack flex items-center flex-col;
 }
-.innovetionsTopH1{
-    @apply  pt-14 text-white  lg:mt-9 2xl:mt-[83px] 2xl:w-[1188px] xl:h-[85px] 2xl:text-[70px] lg:text-[60px] xl:text-[60px]  text-3xl mt-14 text-center ;
+.innovetionsTopH1 {
+  @apply pt-14 text-white  lg:mt-9 2xl:mt-[83px] 2xl:w-[1188px] xl:h-[85px] 2xl:text-[70px] lg:text-[60px] xl:text-[60px]  text-3xl mt-14 text-center;
 }
-.innovetionsTopSecondDiv{
-    @apply  text-white 2xl:w-[1188px] 2xl:h-[136px] mt-[50px] ;
+.innovetionsTopSecondDiv {
+  @apply text-white 2xl:w-[1188px] 2xl:h-[136px] mt-[50px];
 }
-.innovetionsTopP{
-    @apply   text-justify 2xl:text-[24px] xl:text-[26px] lg:text-lg lg:m-8 m-4 xl:m-8 ;
+.innovetionsTopP {
+  @apply text-justify 2xl:text-[24px] xl:text-[26px] lg:text-lg lg:m-8 m-4 xl:m-8;
 }
-.innovetionsSecondDiv{
-    @apply  xl:w-[12px] xl:h-[72px] w-[5px] h-[50px] bg-linegreen rounded-full ;
+.innovetionsSecondDiv {
+  @apply xl:w-[12px] xl:h-[72px] w-[5px] h-[50px] bg-linegreen rounded-full;
 }
-.innovetionsP{
-    @apply  xl:w-[390px] xl:h-[64px] w-[250px] text-lg xl:text-[24px] ml-[6px] ;
+.innovetionsP {
+  @apply xl:w-[390px] xl:h-[64px] w-[250px] text-lg xl:text-[24px] ml-[6px];
 }
 
 /* inovetion style end there */
 
-
 /* footer start here */
-.formLabel{
-    @apply  text-red-500 pl-3;
+.formLabel {
+  @apply text-red-500 pl-3;
 }
-.formInput{
-    @apply  outline-none bg-transparent border-b-[1px] border-b-gray-300 w-full md:w-96;
+.formInput {
+  @apply outline-none bg-transparent border-b-[1px] border-b-gray-300 w-full md:w-96;
 }
-.footerFirstDiv{
-    @apply flex-cols w-full bg-black lg:pt-14 pt-8;
+.footerFirstDiv {
+  @apply flex-cols w-full bg-black lg:pt-14 pt-8;
 }
-.footerSecondDiv{
-    @apply lg:w-[90%] xl:w-[70%] h-full lg:flex sm:justify-between items-center text-white py-5 lg:py-0;
+.footerSecondDiv {
+  @apply lg:w-[90%] xl:w-[70%] h-full lg:flex sm:justify-between items-center text-white py-5 lg:py-0;
 }
-.footerThirdDiv{
-    @apply flex flex-col gap-[20px] md:gap-14 xl:gap-16;
+.footerThirdDiv {
+  @apply flex flex-col gap-[20px] md:gap-14 xl:gap-16;
 }
-.footerH1{
-    @apply text-4xl lg:text-[60px] 2xl:text-[60px] md:py-0 font-gilroy-extrabold text-white text-center lg:text-start ;
+.footerH1 {
+  @apply text-4xl lg:text-[60px] 2xl:text-[60px] md:py-0 font-gilroy-extrabold text-white text-center lg:text-start;
 }
-.footerFirstP{
-    @apply w-[90%] mx-auto md:-mt-8 md:mx-0 md:w-[310px] lg:h-[310px]  lg:text-[40px] font-gilroy-light text-center leading-tight lg:text-start;
+.footerFirstP {
+  @apply w-[90%] mx-auto md:-mt-8 md:mx-0 md:w-[310px] lg:h-[310px]  lg:text-[40px] font-gilroy-light text-center leading-tight lg:text-start;
 }
-.footerSecondP{
-    @apply text-xs font-gilroy-light md:text-[16px] text-center md:text-start;
+.footerSecondP {
+  @apply text-xs font-gilroy-light md:text-[16px] text-center md:text-start;
 }
-.footerForm{
-    @apply flex flex-col gap-2 lg:gap-4 m-auto text-[16px] w-[80%] md:w-auto md:m-0 mt-5 lg:mt-10 md:py-1 md:mt-0;
+.footerForm {
+  @apply flex flex-col gap-2 lg:gap-4 m-auto text-[16px] w-[80%] md:w-auto md:m-0 mt-5 lg:mt-10 md:py-1 md:mt-0;
 }
-.footerFormSubmitLabel{
-    @apply flex cursor-pointer gap-3 w-full h-full rounded-full font-gilroy-light items-center justify-center text-[18px] absolute -left-[2px] bottom-[2px] border-white border-2;
+.footerFormSubmitLabel {
+  @apply flex cursor-pointer gap-3 w-full h-full rounded-full font-gilroy-light items-center justify-center text-[18px] absolute -left-[2px] bottom-[2px] border-white border-2;
 }
-
-
 
 /* footer end here */
 
 /* navbar start here */
-.navDataDiv{
-    @apply text-black p-4 text-center;
+.navDataDiv {
+  @apply text-black p-4 text-center;
 }
-.navbarDiv{
-    @apply flex  bg-white/80 bg-opacity-10 backdrop-blur-2xl w-[300px] absolute top-[30px] right-0 rounded-lg;
+.navbarDiv {
+  @apply flex  bg-white/80 bg-opacity-10 backdrop-blur-2xl w-[300px] absolute top-[30px] right-0 rounded-lg;
 }
-
 
 /* navbar end here */
 
+/* home page start there */
+.homeAboutFirstDiv {
+  @apply h-full relative bg-rose-500 flex w-full lg:py-0 py-5 justify-center items-center md:overflow-hidden;
+}
+.homeAboutSecondDiv {
+  @apply flex flex-col h-full lg:ml-36 xl:ml-20 md:translate-x-0 w-[80%] md:w-3/5  gap-5 lg:gap-0 justify-center items-center md:overflow-hidden md:max-[1000px]:w-[50%];
+}
+.homeAboutThirdDiv {
+  @apply md:text-left text-center text-white md:max-w-[380px] w-full  md:max-[1000px]:text-center;
+}
+.homeAboutH1 {
+  @apply text-[35px] md:text-[70px] xl:text-[70px] md:leading-[55px] font-gilroy-bold;
+}
+.homeAboutH2 {
+  @apply text-3xl md:text-[40px] pt-2 font-gilroy-bold;
+}
+.homeAboutP {
+  @apply md:max-w-[380px] max-h-[181px] text-white text-lg md:text-[22px]  md:mt-10 leading-tight text-[16px] lg:text-[20px] xl:text-[20px] 2xl:text-[22px] font-gilroy-semi-bold;
+}
+.homeBrandFirstDiv {
+  @apply w-full h-full flex justify-center flex-col items-center relative bg-moon bg-cover bg-no-repeat bg-center;
+}
+.homeBrandSecondDiv {
+  @apply h-full w-full text-white flex justify-center;
+}
+.homeBrandThirdDiv {
+  @apply flex flex-col md:justify-start sm:gap-0 w-[300px] mt-24 xs:mt-36 gap-5 sm:mt-52 md:mt-56 lg:mt-14 xl:mt-36 2xl:mt-16 h-full sm:w-full items-center;
+}
+.homeBrandH1 {
+  @apply md:mt-2 text-[28px] sm:text-[50px] lg:text-[60px] xl:text-[55px]  font-gilroy-bold text-center;
+}
+.homeBrandSpan {
+  @apply text-black sm:text-[50px] font-gilroy-bold text-[32px] lg:text-[60px] xl:text-[55px];
+}
+.homeBrandForthDiv {
+  @apply flex flex-col items-center gap-5 mb-52 md:mb-20 lg:mb-10;
+}
+.homeBrandFifthDiv {
+  @apply flex flex-col items-center font-gilroy-bold md:font-gilroy-semi-bold text-[18px] md:text-[24px] xl:text-[24px];
+}
+.homeHeroFirstDiv {
+  @apply h-full w-full;
+}
+.homeHeroSecondDiv {
+  @apply flex h-full w-[80%] md:w-[75%] flex-col lg:gap-2 lg:mt-36 xl:mt-56 md:justify-center lg:justify-start items-start m-auto text-white;
+}
+.homeHeroThirdDiv {
+  @apply text-[28px] flex flex-col lg:gap-10 2xl:text-[60px] xl:text-[55px] md:text-[50px] md:leading-tight lg:leading-10 mt-48 md:mt-0 font-gilroy-bold;
+}
+.homeHeroFourthDiv {
+  @apply flex flex-col gap-5 sm:gap-2;
+}
+.homeHeroP {
+  @apply py-5 text-[16px] lg:text-[22px] font-gilroy-medium md:font-gilroy-regular;
+}
+.homeServicesFirstDiv {
+  @apply w-full h-full relative py-10 md:py-5 lg:py-0;
+}
+.homeServicesSecondDiv {
+  @apply w-full lg:w-[90%] xl:w-[70%] h-full flex-none  md:flex m-auto justify-between items-center py-5 lg:py-0;
+}
+.homeServicesThirdDiv {
+  @apply flex flex-col md:gap-5 justify-around lg:justify-center gap-5 sm:py-0 sm:h-full w-full;
+}
+.homeServicesH1 {
+  @apply md:static top-8 left-14 md:mt-0 text-4xl md:text-[55px] lg:w-full font-gilroy-bold text-center leading-tight lg:text-start;
+}
+.homeServicesForthDiv {
+  @apply flex md:h-full lg:hidden flex-col md:gap-10 justify-center items-center w-full mb-10;
+}
+.homeServicesFifthDiv {
+  @apply flex w-[200px]  h-[401px] md:h-[400px] lg:h-auto relative overflow-hidden rounded-[28px];
+}
+.homeServicesSixDiv {
+  @apply md:static md:flex-none lg:mt-7 flex flex-col justify-center gap-5 items-center lg:items-start -mt-5 md:-mt-0 bottom-5;
+}
+.homeServicesSecondP {
+  @apply text-lg md:text-[26px] text-center lg:text-start font-gilroy-semi-bold lg:mb-7;
+}
+.homeServicesSevenDiv {
+  @apply hidden md:static lg:flex lg:h-full flex-col md:gap-10  justify-center items-end w-full;
+}
+.homeServicesEightDiv {
+  @apply flex justify-center items-center md:w-[210px] xl:w-[250px] h-[400px] md:h-auto relative overflow-hidden md:mt-20 z-10 md:rounded-[50px] lg:rounded-[35px];
+}
+.homeServicesNineDiv {
+  @apply h-3 rounded-full w-[240px] lg:w-[180px]  xl:w-[200px] mt-5 md:-mt-6 ml-8 md:ml-0 lg:mr-5 bg-gray-300 overflow-hidden;
+}
+.homeTestimonialFirstDiv {
+  @apply h-full md:flex w-full;
+}
+.homeTestimonialSecondDiv {
+  @apply w-full md:w-[75%] h-full m-auto flex flex-col justify-around items-center md:items-start md:justify-around;
+}
+.homeTestimonialThirdDiv {
+  @apply flex md:flex-col flex-row w-full ml-0 lg:ml-10 xl:ml-20 items-center md:gap-20 md:items-start justify-center;
+}
+.homeTestimonialFourthDiv {
+  @apply text-2xl md:text-4xl flex-1 flex flex-col gap-3 xl:gap-10 font-gilroy-bold text-blue-700 xl:mt-24 2xl:mt-20 text-center md:text-start;
+}
+.homeTestimonialSpan {
+  @apply text-5xl md:text-[70px] xl:text-[100px];
+}
+.homeTestimonialP {
+  @apply md:text-[30px] xl:text-[36px];
+}
+.homeTestimonialFifthDiv {
+  @apply text-2xl flex-1 flex flex-col gap-3 xl:gap-10 font-gilroy-bold text-blue-700 text-center md:text-start;
+}
+.homeTestimonialSixthDiv {
+  @apply w-[90%]  pt-48 md:w-[420px] mt-10 sm:mt-0 md:pt-0 font-gilroy-semi-bold md:text-[20px] xl:text-[22px] text-blue-800 text-center md:text-start;
+}
+/* home page end there */
+
+/* industry start there */
+.industryFirstDiv {
+  @apply h-screen  bg-center w-full relative;
+}
+.industrySecondDiv {
+  @apply h-screen w-full xl:-ml-[70px] flex items-center justify-center;
+}
+.industryThirdDiv {
+  @apply w-[80%] flex items-center;
+}
+.industryFourthDiv {
+  @apply text-white flex-cols lg:items-start gap-10 w-[90%] max-[820px]:text-center;
+}
+.industryH1 {
+  @apply text-[28px] md:text-[50px] lg:text-[60px] font-gilroy-bold leading-tight lg:w-[700px];
+}
+/* industry end there */
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus {

@@ -11,7 +11,12 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 import menu from "@assets/menuUp.png";
 import close from "@assets/Xmark.png";
-import { IndustryNavDataFirst, IndustryNavDataSecond, servicesNavDataFirst, servicesNavDataSecond } from "../../data/data";
+import {
+  IndustryNavDataFirst,
+  IndustryNavDataSecond,
+  servicesNavDataFirst,
+  servicesNavDataSecond,
+} from "../../data/data";
 
 const Navbar = () => {
   // Bug Fix: change dynamic background color in button
@@ -138,14 +143,18 @@ const Navbar = () => {
               {isServiceMenuDropDownOpen && (
                 <div className="flex bg-white/80 bg-opacity-10 backdrop-blur-2xl w-[300px] absolute top-[30px] right-0 rounded-lg">
                   <div className="flex flex-col">
-                  {
-                    servicesNavDataFirst.map(serves=> <Link to={serves.to}><div className='navDataDiv'>{serves.title}</div></Link>)
-                   }
+                    {servicesNavDataFirst.map((serves) => (
+                      <Link to={serves.to}>
+                        <div className="navDataDiv">{serves.title}</div>
+                      </Link>
+                    ))}
                   </div>
                   <div className="flex flex-col">
-                  {
-                    servicesNavDataSecond.map(serves=> <Link to={serves.to}><div className='navDataDiv'>{serves.title}</div></Link>)
-                   }
+                    {servicesNavDataSecond.map((serves) => (
+                      <Link to={serves.to}>
+                        <div className="navDataDiv">{serves.title}</div>
+                      </Link>
+                    ))}
                   </div>
                 </div>
               )}
@@ -156,14 +165,20 @@ const Navbar = () => {
             >
               <span
                 // onMouseOver={() => setIndustryMenuDropDownOpen(true)}
-                onClick={() =>{setIndustryMenuDropDownOpen(!isIndustryMenuDropDownOpen); handleIndustries()}}
+                onClick={() => {
+                  setIndustryMenuDropDownOpen(!isIndustryMenuDropDownOpen);
+                  handleIndustries();
+                }}
                 className="cursor-pointer"
               >
                 Industries
               </span>
               <span
                 // onMouseOver={() => setIndustryMenuDropDownOpen(true)}
-                onClick={() =>{setIndustryMenuDropDownOpen(!isIndustryMenuDropDownOpen); handleIndustries()}}
+                onClick={() => {
+                  setIndustryMenuDropDownOpen(!isIndustryMenuDropDownOpen);
+                  handleIndustries();
+                }}
                 className="cursor-pointer"
               >
                 {isIndustryMenuDropDownOpen ? (
@@ -175,14 +190,18 @@ const Navbar = () => {
               {isIndustryMenuDropDownOpen && (
                 <div className="flex  justify-center bg-white/80 bg-opacity-10 backdrop-blur-2xl w-[300px] absolute top-[30px] left-0 rounded-lg">
                   <div className=" flex flex-col">
-                  {
-                    IndustryNavDataFirst.map(industry=> <Link to={industry.to}><div className='navDataDiv'>{industry.title}</div></Link>)
-                   }
+                    {IndustryNavDataFirst.map((industry) => (
+                      <Link to={industry.to}>
+                        <div className="navDataDiv">{industry.title}</div>
+                      </Link>
+                    ))}
                   </div>
                   <div className=" flex flex-col">
-                  {
-                    IndustryNavDataSecond.map(industry=> <Link to={industry.to}><div className='navDataDiv'>{industry.title}</div></Link>)
-                   }
+                    {IndustryNavDataSecond.map((industry) => (
+                      <Link to={industry.to}>
+                        <div className="navDataDiv">{industry.title}</div>
+                      </Link>
+                    ))}
                   </div>
                 </div>
               )}
