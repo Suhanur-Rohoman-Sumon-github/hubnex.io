@@ -8,22 +8,32 @@ import AboutCards from "../components/aboutpage/AboutCards";
 import Swiperpartners from "../components/aboutpage/Swiperpartners";
 import Navbar from "../components/navbar/Navbar";
 
-
 const About = () => {
+  const isMobile = () => {
+    const match = window.matchMedia("(max-width:912px)");
+    return match && match.matches;
+  };
   return (
     <div className="h-screen w-full">
-      <Navbar />
-      <Hero />
-
-      <Abouts />
-
-      <AboutCards />
-
-      <Ourself />
-
-      {isMobile() ? <Swiperpartners /> : <Partners />}
-
-      <Footer />
+      <div className="h-full w-full ">
+        <section className=" h-screen lg:h-[982px] w-full bg-black ">
+          <Navbar />
+          <Hero />
+        </section>
+        <section>
+          <Abouts />
+        </section>
+        <section>
+          <AboutCards />
+        </section>
+        <section>
+          <Ourself />
+        </section>
+        <section>{isMobile() ? <Swiperpartners /> : <Partners />}</section>
+        <section>
+          <Footer />
+        </section>
+      </div>
     </div>
   );
 };
