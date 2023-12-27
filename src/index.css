@@ -159,7 +159,7 @@
   @apply text-center font-gilroy-medium text-[15px] md:text-[22px];
 }
 .chooseFirstDiv {
-  @apply h-auto lg:py-0 pt-16 lg:pb-48 xl:h-screen overflow-hidden w-full bg-black bg-cover;
+  @apply h-auto lg:py-0 pt-16 pb-20 lg:pb-48 xl:pb-0 xl:h-screen overflow-hidden w-full bg-black bg-cover;
 }
 .chooseSecondDiv {
   @apply h-full w-full flex justify-center items-center;
