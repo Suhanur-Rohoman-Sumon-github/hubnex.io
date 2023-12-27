@@ -242,7 +242,7 @@
   @apply text-white flex 2xl:text-[28px] font-gilroy-medium gap-[14px];
 }
 .innovetionsTopDiv {
-  @apply py-10 md:py-0 min-h-screen xl:w-full xl:h-[865px] gap-5 bg-bgblack flex items-center flex-col;
+  @apply pb-40 md:pb-0 min-h-screen xl:w-full xl:h-[865px] gap-5 bg-bgblack flex items-center flex-col;
 }
 .innovetionsTopH1 {
   @apply pt-14 text-white  lg:mt-9 2xl:mt-[83px] 2xl:w-[1188px] xl:h-[85px] 2xl:text-[70px] lg:text-[60px] xl:text-[60px]  text-3xl mt-14 text-center;

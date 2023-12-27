@@ -1,33 +1,22 @@
-import React, { useEffect, useRef, useState } from 'react'
-import IndustryHeros from '../../components/industrypage/industryHeros/IndustryHeros';
-import IndustryOthersPage from '../../components/industrypage/industryHeros/IndustryOthersPage';
-const sectionIds = ['section-1', 'section-2'];
-import imge from "../../assets/ind5.png"
+import React, { useEffect, useRef, useState } from "react";
+import IndustryHeros from "../../components/industrypage/industryHeros/IndustryHeros";
+import IndustryOthersPage from "../../components/industrypage/industryHeros/IndustryOthersPage";
+import imge from "../../assets/ind5.png";
 const Travel = () => {
-
-  const scrollRef = useRef(null);
-
-
-  
-
-  
-
   return (
-    <div className='h-screen w-full'>
-      
-      <div className='h-full w-full overflow-y-scroll ' ref={scrollRef} style={{ scrollSnapType: 'y mandatory' }}>
-      <section
-        id='section-1' className='snap-start'
-      >
-         <IndustryHeros title={"Public Sector Solutions"  } discriptions={"Your Voice, Your Government Bridging the Gap for Better Governance"} background={imge}  button={"Let's talk"} />
-      </section>
+    <div className="h-screen w-full">
+      <IndustryHeros
+        title={"Public Sector Solutions"}
+        discriptions={
+          "Your Voice, Your Government Bridging the Gap for Better Governance"
+        }
+        background={imge}
+        button={"Let's talk"}
+      />
 
-      <section id='section-2' className='snap-start'>
       <IndustryOthersPage />
-      </section>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Travel
+export default Travel;
