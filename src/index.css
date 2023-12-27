@@ -82,7 +82,7 @@
   @apply text-[16.22px] md:text-[22px] font-gilroy-semi-bold;
 }
 .about-us-who-we-are-hr {
-  @apply md:h-[80%] w-[80%] md:w-0 border-[1px]  border-gray-500;
+  @apply md:h-[80%] w-[80%] lg:h-[100%] lg:mt-24 xl:mt-8 md:w-0 border-[1px]  border-gray-500;
 }
 .aboutUsTopFirstDiv {
   @apply bg-ablack w-full min-h-screen 2xl:h-[884px]  flex justify-evenly items-center gap-1 flex-col pb-20;
@@ -137,7 +137,7 @@
 
 /* ourself start there */
 .ourSelfFirstDiv {
-  @apply h-auto md:py-0 py-24 lg:h-[930px] w-full bg-earth bg-contain bg-no-repeat bg-black bg-bottom;
+  @apply h-auto md:py-0 py-24  lg:h-[930px] w-full bg-earth bg-contain bg-no-repeat bg-black bg-bottom;
 }
 .ourSelfSecondDiv {
   @apply h-full w-full flex justify-center;
@@ -159,7 +159,7 @@
   @apply text-center font-gilroy-medium text-[15px] md:text-[22px];
 }
 .chooseFirstDiv {
-  @apply h-auto lg:py-0 pt-16 xl:h-screen overflow-hidden w-full bg-black bg-cover;
+  @apply h-auto lg:py-0 pt-16 lg:pb-48 xl:h-screen overflow-hidden w-full bg-black bg-cover;
 }
 .chooseSecondDiv {
   @apply h-full w-full flex justify-center items-center;
