@@ -16,23 +16,21 @@ const About = () => {
   return (
     <div className="h-screen w-full">
       <div className="h-full w-full ">
-        <section className="snap-start h-screen lg:h-[982px] w-full bg-black ">
+        <section className=" h-screen lg:h-[982px] w-full bg-black ">
           <Navbar />
           <Hero />
         </section>
-        <section className="snap-start">
+        <section>
           <Abouts />
         </section>
-        <section className="snap-start">
+        <section>
           <AboutCards />
         </section>
-        <section className="snap-start">
+        <section>
           <Ourself />
         </section>
-        <section className="snap-start">
-          {isMobile() ? <Swiperpartners /> : <Partners />}
-        </section>
-        <section className="snap-start">
+        <section>{isMobile() ? <Swiperpartners /> : <Partners />}</section>
+        <section>
           <Footer />
         </section>
       </div>
