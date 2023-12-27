@@ -8,13 +8,6 @@ import AboutCards from "../components/aboutpage/AboutCards";
 import Swiperpartners from "../components/aboutpage/Swiperpartners";
 import Navbar from "../components/navbar/Navbar";
 
-const sectionIds = [
-  "section-1",
-  "section-2",
-  "section-3",
-  "section-4",
-  "section-5",
-];
 
 const About = () => {
   return (

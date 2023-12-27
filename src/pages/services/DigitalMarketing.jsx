@@ -11,8 +11,6 @@ const DigitalMarketing = () => {
     <div className="h-screen w-full">
       <div
         className="h-full w-full overflow-y-scroll"
-        ref={scrollRef}
-        style={{ scrollSnapType: "y mandatory" }}
       >
         <section id="section-1" className="snap-start">
           {/* change industry hero to services hero to make all things align and also add specific componnet degain  */}
