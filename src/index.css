@@ -431,7 +431,7 @@
   @apply w-[80%] flex items-center;
 }
 .industryFourthDiv {
-  @apply text-white flex-cols lg:items-start gap-10 w-[90%] max-[820px]:text-center;
+  @apply text-white flex-col lg:items-start gap-10 w-[90%] max-[820px]:text-center;
 }
 .industryH1 {
   @apply text-[28px] md:text-[50px] lg:text-[60px] font-gilroy-bold leading-tight lg:w-[700px];
